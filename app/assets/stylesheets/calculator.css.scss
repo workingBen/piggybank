@@ -5,6 +5,9 @@
 span.title {
   font-size: 40px;
 }
+span.subtitle {
+  font-size: 30px;
+}
 
 #principle {
   font-size: 50px;
@@ -15,6 +18,11 @@ span.title {
 #futureValue {
   font-size: 50px;
   color: green;
+}
+
+#totalInterest, #percentInterest {
+  font-size: 30px;
+  color: blueviolet;
 }
 
 .slider {

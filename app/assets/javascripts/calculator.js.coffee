@@ -9,10 +9,14 @@ window.futureValue = {
 }
 
 @calculateFutureValue = ->
-  window.futureValue['fv'] = (futureValue['a']*12*(Math.pow((1+futureValue['i']), futureValue['n'])-1)/futureValue['i'])
-  window.futureValue['principle'] = futureValue['a']*12*futureValue['n']
-  $( "#principle" ).text( "$" + window.futureValue['principle'])
-  $( "#futureValue" ).text( "$" + window.futureValue['fv'].toFixed(2))
+  fv = (futureValue['a']*12*(Math.pow((1+futureValue['i']), futureValue['n'])-1)/futureValue['i'])
+  principle = futureValue['a']*12*futureValue['n']
+  totalInterest = fv - principle
+  percentInterest = ((fv - principle) / principle)*100
+  $( "#principle" ).text( "$" + principle)
+  $( "#futureValue" ).text( "$" + fv.toFixed(2))
+  $( "#totalInterest" ).text( "$" + totalInterest.toFixed(2))
+  $( "#percentInterest" ).text( percentInterest.toFixed(2) + "%" )
   console.log window.futureValue
 
 $ ->
