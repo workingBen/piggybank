@@ -1,3 +1,18 @@
 // Place all the styles related to the calculator controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+span.title {
+  font-size: 40px;
+}
+
+#principle {
+  font-size: 50px;
+  color: orange;
+}
+
+
+#futureValue {
+  font-size: 50px;
+  color: green;
+}
