@@ -14,10 +14,9 @@ window.futureValue = {
   totalInterest = fv - principle
   percentInterest = ((fv - principle) / principle)*100
   $( "#principle" ).text( "$" + principle)
-  $( "#futureValue" ).text( "$" + fv.toFixed(2))
-  $( "#totalInterest" ).text( "$" + totalInterest.toFixed(2))
+  $( "#futureValue" ).text( fv.toFixed(2) )
+  $( "#totalInterest" ).text( totalInterest.toFixed(2) )
   $( "#percentInterest" ).text( percentInterest.toFixed(2) + "%" )
-  console.log window.futureValue
 
 $ ->
   $("#sliderA").slider({
@@ -26,7 +25,7 @@ $ ->
     max: 2000,
     step: 20,
     slide: ( event, ui ) =>
-      $( "#amountA" ).val( "$" + ui.value )
+      $( "#amountA" ).text( ui.value )
       window.futureValue['a'] = ui.value
       calculateFutureValue()
   })
@@ -39,7 +38,7 @@ $ ->
     max: 20,
     step: 1,
     slide: ( event, ui ) =>
-      $( "#amountN" ).val( ui.value + " years" )
+      $( "#amountN" ).text( ui.value )
       window.futureValue['n'] = ui.value
       calculateFutureValue()
   })
