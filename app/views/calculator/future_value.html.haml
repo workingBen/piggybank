@@ -1,25 +1,46 @@
 %p
   %label{:for => "amount"} Average monthly donation amount ($20 increments):
-  %input#amountA{:style => "border: 0; color: #f6931f; font-weight: bold;", :type => "text"}
 #sliderA.slider
 
 %p
   %label{:for => "amount"} Years until College:
-  %input#amountN{:style => "border: 0; color: #f6931f; font-weight: bold;", :type => "text"}
 #sliderN.slider
 
-%p
-  %span.title Principle:
-  %span#principle
+.result
+  .fraction
+    %span.numerator
+      %sup
+        $
+      %span#amountA 160
+    %span.demoninator
+      per month
+  %span.delimiter
+    for
 
-%p
-  %span.title Future Value:
-  %span#futureValue
+  .fraction
+    %span.numerator
+      %span#amountN 16
+    %span.denominator
+      years
+  %span.delimiter
+    to save
 
-%p
-  %span.subtitle Total Interest:
-  %span#totalInterest
+  .fraction
+    %span.numerator
+      %sup
+        $
+      %span#futureValue 37,000
+    %span.denominator
+      guaranteed
 
-%p
-  %span.subtitle Percent Interest:
-  %span#percentInterest
+.result
+  %div
+    You'll profit
+    %sup
+      $
+    %span#totalInterest
+
+  %div
+    A
+    %span#percentInterest
+    increase
