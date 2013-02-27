@@ -1,0 +1,37 @@
+%p
+  %label{:for => "amount"} Average monthly donation amount ($20 increments):
+#sliderA.slider
+
+%p
+  %label{:for => "amount"} Years until College:
+#sliderN.slider
+
+.result
+  .fraction
+    %span.numerator
+      %sup
+        $
+      %span#amountA 160
+    %span.demoninator
+      per month
+  %span.delimiter
+    for
+
+  .fraction
+    %span.numerator
+      %span#amountN 16
+    %span.denominator
+      years
+  %span.delimiter
+    to save
+
+  .fraction
+    %span.numerator
+      %sup
+        $
+      %span#futureValue 37,000
+    %span.denominator
+      guaranteed
+
+  %button.btn.btn-primary.btn-large.continue
+    Continue
