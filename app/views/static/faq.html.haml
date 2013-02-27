@@ -1,0 +1,25 @@
+- require 'faker'
+
+.container
+  %h1 PiggyBank FAQ
+
+  .row.faq-item
+    .span8
+      %p= Faker::Lorem.paragraph(sentence_count=10)
+      %p= Faker::Lorem.paragraph(sentence_count=4)
+    .span4
+      %img(src='assets/placeholder_graph1.jpg')
+
+  .row.faq-item
+    .span4
+      %img(src='assets/placeholder_graph2.jpg')
+    .span8
+      %p= Faker::Lorem.paragraph(sentence_count=10)
+      %p= Faker::Lorem.paragraph(sentence_count=4)
+
+  .row.faq-item
+    .span8
+      %p= Faker::Lorem.paragraph(sentence_count=10)
+      %p= Faker::Lorem.paragraph(sentence_count=4)
+    .span4
+      %img(src='assets/placeholder_graph1.jpg')

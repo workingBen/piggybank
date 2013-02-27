@@ -1,0 +1,25 @@
+- require 'faker'
+
+.container
+  %h1 Welcome to PiggyBank
+
+  .row
+    .span6
+      .medium-container
+        %h2.center
+          Give a gift that matters
+    .span6
+      .medium-container
+        .calculator
+          Investment Calculator
+          %hr
+          = render partial: "shared/welcome_calculator"
+  .row
+    .span2
+      %img(src='assets/placeholder_graph1.jpg')
+    .span4
+      = Faker::Lorem.paragraph
+    .span2
+      %img(src='assets/placeholder_graph2.jpg')
+    .span4
+      = Faker::Lorem.paragraph
