@@ -1,4 +1,9 @@
 .container
   %h1 Welcome to PiggyBank
 
-  = render partial: "shared/welcome_calculator"
+  .row
+    .span6
+      Give a gift that matters
+    .span6
+      .calculator
+        = render partial: "shared/welcome_calculator"
