@@ -1,3 +1,5 @@
+- require 'faker'
+
 .container
   %h1 Welcome to PiggyBank
 
@@ -16,8 +18,8 @@
     .span2
       %img(src='assets/placeholder_graph1.jpg')
     .span4
-      this is text
+      = Faker::Lorem.paragraph
     .span2
       %img(src='assets/placeholder_graph2.jpg')
     .span4
-      this is text
+      = Faker::Lorem.paragraph
