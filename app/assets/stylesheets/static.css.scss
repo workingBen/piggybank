@@ -26,6 +26,27 @@ button.continue {
 
 .team {
   margin-top: 40px;
+  .image {
+    position: relative;
+  }
+  h3 {
+    position: absolute;
+    margin-top: 2px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    span {
+      color: white;
+      font: bold 24px/45px Helvetica, Sans-Serif;
+      letter-spacing: -1px;
+      background: rgb(0, 0, 0); /* fallback color */
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+    }
+  }
+  .title {
+    font: bold 18px/30px Helvetica, Sans-Serif;
+  }
   img {
     margin-bottom: 20px;
   }

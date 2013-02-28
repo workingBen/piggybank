@@ -5,12 +5,31 @@
 
   .row.team
     .span4
-      %img(src='assets/pat.jpg')
+      .image
+        %img(src='assets/pat.jpg')
+        %h3
+          %span
+            Pat McGrath
+      %p.title
+        Founder / Chief Opperating Officer
       %p= Faker::Lorem.paragraph(sentence_count = 8)
     .span4
-      %img(src='assets/ben.jpg')
+      .image
+        %img(src='assets/ben.jpg')
+        %h3
+          %span
+            Ben Pellow
+      %p.title
+        Founder / Chief Executive Officer
       %p= Faker::Lorem.paragraph(sentence_count = 10)
     .span4
-      %img(src='assets/joel.jpg')
+      .image
+        %img(src='assets/joel.jpg')
+        %h3
+          %span
+            Joel Karacozoff
+          %br
+      %p.title
+        Founder / Director of Finance
       %p= Faker::Lorem.paragraph(sentence_count = 9)
 
