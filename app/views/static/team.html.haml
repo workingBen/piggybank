@@ -1,0 +1,16 @@
+- require 'faker'
+
+.container
+  %h1 PiggyBank Team
+
+  .row.team
+    .span4
+      %img(src='assets/pat.jpg')
+      %p= Faker::Lorem.paragraph(sentence_count = 8)
+    .span4
+      %img(src='assets/ben.jpg')
+      %p= Faker::Lorem.paragraph(sentence_count = 10)
+    .span4
+      %img(src='assets/joel.jpg')
+      %p= Faker::Lorem.paragraph(sentence_count = 9)
+
